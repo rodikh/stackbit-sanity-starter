@@ -13,7 +13,7 @@ export default class Landing extends React.Component {
                     const component = _.upperFirst(_.camelCase(_.get(section, '_type')));
                     const Component = components[component];
                     return (
-                        <Component key={section_idx} {...this.props} section={section} />
+                        <Component key={section_idx} {...this.props} section={section} annotationPrefix={`.${section_idx}`} />
                     )
                 })}
             </Layout>

@@ -33,7 +33,7 @@ models:
   post:
     type: page
     urlPath: '/blog/{slug}'
-  advanced:
+  landing:
     type: page
     urlPath: '/{slug}'
   blog_category:

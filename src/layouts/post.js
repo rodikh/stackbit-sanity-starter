@@ -15,7 +15,7 @@ export default class Post extends React.Component {
                     <div className="inner-medium">
                         <article className="post post-full">
                             <header className="post-header">
-                                <h1 className="post-title">{_.get(page, 'title')}</h1>
+                                <h1 className="post-title" data-sb-field-path="title">{_.get(page, 'title')}</h1>
                             </header>
                             {_.has(page, 'image') && (
                                 <div className="post-thumbnail">
@@ -23,12 +23,12 @@ export default class Post extends React.Component {
                                 </div>
                             )}
                             {_.has(page, 'subtitle') && (
-                                <div className="post-subtitle">
+                                <div className="post-subtitle" data-sb-field-path="subtitle">
                                     {_.get(page, 'subtitle')}
                                 </div>
                             )}
                             {_.has(page, 'content') && (
-                                <div className="post-content">
+                                <div className="post-content" data-sb-field-path="content">
                                     {markdownify(_.get(page, 'content'))}
                                 </div>
                             )}
