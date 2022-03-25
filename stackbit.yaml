@@ -4,6 +4,7 @@
 stackbitVersion: ~0.4.0
 ssgName: nextjs
 cmsName: sanity
+nodeVersion: '14'
 
 # The "buildCommand" and the "publishDir" properties are used to configure the
 # serverless deployment platform when Stackbit creates a new site from this theme.
