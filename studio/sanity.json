@@ -4,7 +4,7 @@
     "name": "stackbit-nextjs-sanity-starter"
   },
   "api": {
-    "projectId": "ufxgc2ho",
+    "projectId": "SANITY_PROJECT_ID",
     "dataset": "production"
   },
   "plugins": [
