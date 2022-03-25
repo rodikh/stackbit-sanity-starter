@@ -31,15 +31,7 @@ models:
     type: page
     urlPath: '/{slug}'
     labelField: title
-  post:
-    type: page
-    urlPath: '/blog/{slug}'
-    labelField: title
   landing:
     type: page
     urlPath: '/{slug}'
-    labelField: title
-  blog_category:
-    type: page
-    urlPath: '/blog/category/{slug}'
     labelField: title

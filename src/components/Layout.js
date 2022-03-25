@@ -1,20 +1,11 @@
 import React from 'react';
 import Head from 'next/head';
-import Router from 'next/router';
-// import ScriptTag from 'react-script-tag';
 import _ from 'lodash';
 
 import Header from './Header';
 import Footer from './Footer';
 
-
 export default class Body extends React.Component {
-
-    constructor(props) {
-        super(props);
-        this.handleRouteChange = this.handleRouteChange.bind(this);
-    }
-
     componentDidMount() {
         // Sticky header
         let offsetY = 0;
@@ -38,21 +29,6 @@ export default class Body extends React.Component {
                 document.body.classList.remove('has--scrolled');
             }
         }
-
-        Router.events.on('routeChangeStart', this.handleRouteChange);
-    }
-
-    componentWillUnmount() {
-        Router.events.off('routeChangeStart', this.handleRouteChange);
-    }
-
-    handleRouteChange() {
-        // Responsive video embeds
-        const videoEmbeds = [
-            'iframe[src*="youtube.com"]',
-            'iframe[src*="vimeo.com"]'
-        ];
-        reframe(videoEmbeds.join(','));
     }
 
     render() {
@@ -73,7 +49,6 @@ export default class Body extends React.Component {
                         {this.props.children}
                     </main>
                     <Footer {...this.props} />
-                    <script src="/js/plugins.js"/>
                 </div>
             </React.Fragment>
         );

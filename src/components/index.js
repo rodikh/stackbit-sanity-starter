@@ -7,11 +7,9 @@ import SectionCta from './SectionCta';
 import SectionFaq from './SectionFaq';
 import SectionFeatures from './SectionFeatures';
 import SectionHero from './SectionHero';
-import SectionPosts from './SectionPosts';
 import SectionPricing from './SectionPricing';
 import SectionReviews from './SectionReviews';
 import Social from './Social';
-import SubscribeForm from './SubscribeForm';
 import Layout from './Layout';
 
 export {
@@ -24,11 +22,9 @@ export {
     SectionFaq,
     SectionFeatures,
     SectionHero,
-    SectionPosts,
     SectionPricing,
     SectionReviews,
     Social,
-    SubscribeForm,
     Layout
 };
 
@@ -42,10 +38,8 @@ export default {
     SectionFaq,
     SectionFeatures,
     SectionHero,
-    SectionPosts,
     SectionPricing,
     SectionReviews,
     Social,
-    SubscribeForm,
     Layout
 };

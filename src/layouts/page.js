@@ -4,7 +4,6 @@ import _ from 'lodash';
 import { Layout } from '../components';
 import { markdownify } from '../utils';
 
-
 export default class Page extends React.Component {
     render() {
         const page = _.get(this.props, 'page');

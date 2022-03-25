@@ -1,7 +1,6 @@
 const _ = require('lodash');
 const mapDeep = require('./src/utils/map-deep');
 
-
 const isDev = process.env.NODE_ENV === 'development';
 
 module.exports = {
@@ -41,13 +40,9 @@ module.exports = {
                 pages: [
                     { path: '/{slug}', predicate: _.matchesProperty('_type', 'landing') },
                     { path: '/{slug}', predicate: _.matchesProperty('_type', 'page') },
-                    { path: '/{slug}', predicate: _.matchesProperty('_type', 'blog') },
-                    { path: '/blog/{slug}', predicate: _.matchesProperty('_type', 'post') },
-                    { path: '/blog/category/{slug}', predicate: _.matchesProperty('_type', 'blog_category') }
                 ],
                 commonProps: {
                     config: { single: true, predicate: _.matchesProperty('_type', 'site_config') },
-                    posts: { predicate: _.matchesProperty('_type', 'post') }
                 }
             }
         }

@@ -28,12 +28,10 @@ export default {
       description: 'Page sections',
       of: [
         {type: 'section_cta'},
-        {type: 'section_contact'},
         {type: 'section_content'},
         {type: 'section_faq'},
         {type: 'section_features'},
         {type: 'section_hero'},
-        {type: 'section_posts'},
         {type: 'section_pricing'},
         {type: 'section_reviews'}
       ]

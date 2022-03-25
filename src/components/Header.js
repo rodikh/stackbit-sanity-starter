@@ -5,7 +5,6 @@ import _ from 'lodash';
 import { Link, safePrefix } from '../utils';
 import Action from './Action';
 
-
 export default class Header extends React.Component {
 
     constructor(props) {

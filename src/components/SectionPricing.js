@@ -4,7 +4,6 @@ import _ from 'lodash';
 import { markdownify } from '../utils';
 import CtaButtons from './CtaButtons';
 
-
 export default class SectionPricing extends React.Component {
     render() {
         const section = _.get(this.props, 'section');

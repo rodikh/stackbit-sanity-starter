@@ -1,9 +1,8 @@
 import React from 'react';
 import _ from 'lodash';
 
-import { Link, safePrefix, htmlToReact } from '../utils';
+import { Link, safePrefix } from '../utils';
 import Social from './Social';
-import SubscribeForm from './SubscribeForm';
 import Action from './Action';
 
 
@@ -55,21 +54,12 @@ export default class Footer extends React.Component {
                                 </div>
                             </nav>
                             }
-                            {_.get(config, 'footer.has_subscribe') &&
-                            <div className="widget footer-subscribe">
-                                <h2 className="widget-title">{_.get(config, 'footer.subscribe_title')}</h2>
-                                {_.get(config, 'footer.subscribe_content') &&
-                                <p>{htmlToReact(_.get(config, 'footer.subscribe_content'))}</p>
-                                }
-                                <SubscribeForm {...this.props} />
-                            </div>
-                            }
                         </div>
                     </div>
                 </div>
                 <div className="site-info outer">
                     <div className="inner">
-                        {htmlToReact(_.get(config, 'footer.content'))}
+                        {_.get(config, 'footer.content')}
                         &nbsp;
                         {_.map(_.get(config, 'footer.links'), (link, linkIdx) => (
                             <React.Fragment key={linkIdx}>

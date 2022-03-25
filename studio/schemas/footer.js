@@ -55,24 +55,6 @@ export default {
             of: [{type: 'action'}]
         },
         {
-            type: 'boolean',
-            title: 'Enable Subscribe',
-            name: 'has_subscribe',
-            description: 'Display the newsletter subscription form in the footer'
-        },
-        {
-            type: 'string',
-            title: 'Subscribe Title',
-            name: 'subscribe_title',
-            description: 'The title of the subscribe block displayed in the footer'
-        },
-        {
-            type: 'string',
-            title: 'Subscribe Content',
-            name: 'subscribe_content',
-            description: 'The text content in the subscribe block displayed in the footer'
-        },
-        {
             type: 'string',
             title: 'Footer Content',
             name: 'content',

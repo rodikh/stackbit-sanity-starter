@@ -1,9 +1,5 @@
-import marked from 'marked';
-import htmlToReact from './htmlToReact';
+import Markdown from 'react-markdown';
 
 export default function markdownify(markdown) {
-    if (!markdown) {
-        return null;
-    }
-    return htmlToReact(marked(markdown));
+    return (<Markdown>{markdown}</Markdown>)
 };
