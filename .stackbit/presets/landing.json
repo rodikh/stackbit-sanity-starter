@@ -1,0 +1,11 @@
+{
+    "model": "landing",
+    "presets": [
+        {
+            "label": "Empty",
+            "data": {
+                "title": "I'm an empty page!"
+            }
+        }
+    ]
+}
