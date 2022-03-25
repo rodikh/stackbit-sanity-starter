@@ -15,7 +15,7 @@ const Page = (props) => {
                             <h1 className="post-title" {...toFieldPath('title')}>{title}</h1>
                         </header>
                         {image && (
-                            <div className="post-thumbnail">
+                            <div className="post-thumbnail" {...toFieldPath('image')}>
                                 <img src={image} alt={title} />
                             </div>
                         )}

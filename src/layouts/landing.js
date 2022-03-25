@@ -7,7 +7,7 @@ const Landing = (props) => {
 
     return (
         <Layout {...props}>
-            {page.sections.map((section, section_idx) => {
+            {page.sections?.map((section, section_idx) => {
                 const component = _.upperFirst(_.camelCase(section._type));
                 const Component = components[component];
 

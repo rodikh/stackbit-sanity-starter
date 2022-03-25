@@ -6,11 +6,6 @@ ssgName: nextjs
 cmsName: sanity
 nodeVersion: '16'
 
-assets:
-  referenceType: static
-  staticDir: public
-  uploadDir: images
-  publicPath: /
 # The "buildCommand" and the "publishDir" properties are used to configure the
 # serverless deployment platform when Stackbit creates a new site from this theme.
 buildCommand: npm run build
