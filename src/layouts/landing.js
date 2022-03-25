@@ -1,22 +1,22 @@
-import React from 'react';
 import _ from 'lodash';
 
 import components, { Layout } from '../components';
 
+const Landing = (props) => {
+    const { page } = props;
 
-export default class Landing extends React.Component {
+    return (
+        <Layout {...props}>
+            {page.sections.map((section, section_idx) => {
+                const component = _.upperFirst(_.camelCase(section._type));
+                const Component = components[component];
 
-    render() {
-        return (
-            <Layout {...this.props}>
-                {_.map(_.get(this.props, 'page.sections'), (section, section_idx) => {
-                    const component = _.upperFirst(_.camelCase(_.get(section, '_type')));
-                    const Component = components[component];
-                    return (
-                        <Component key={section_idx} {...this.props} section={section} annotationPrefix={`.${section_idx}`} />
-                    )
-                })}
-            </Layout>
-        );
-    }
+                return (
+                    <Component key={section_idx} {...props} section={section} annotationPrefix={`.${section_idx}`} />
+                )
+            })}
+        </Layout>
+    );
 }
+
+export default Landing;

@@ -27,13 +27,10 @@ export default {
       name: 'sections',
       description: 'Page sections',
       of: [
-        {type: 'section_cta'},
-        {type: 'section_content'},
-        {type: 'section_faq'},
-        {type: 'section_features'},
-        {type: 'section_hero'},
-        {type: 'section_pricing'},
-        {type: 'section_reviews'}
+        { type: 'section_cta' },
+        { type: 'section_content' },
+        { type: 'section_features' },
+        { type: 'section_hero' },
       ]
     }
   ]

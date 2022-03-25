@@ -1,30 +1,22 @@
 import CtaButtons from './CtaButtons';
 import Footer from './Footer';
 import Header from './Header';
-import SectionContact from './SectionContact';
-import SectionContent from './SectionContent';
-import SectionCta from './SectionCta';
-import SectionFaq from './SectionFaq';
-import SectionFeatures from './SectionFeatures';
-import SectionHero from './SectionHero';
-import SectionPricing from './SectionPricing';
-import SectionReviews from './SectionReviews';
-import Social from './Social';
+import SectionContent from './Sections/Content';
+import SectionCta from './Sections/Cta';
+import SectionFeatures from './Sections/Features';
+import SectionHero from './Sections/Hero';
+import FooterLinks from './FooterLinks';
 import Layout from './Layout';
 
 export {
     CtaButtons,
     Footer,
     Header,
-    SectionContact,
     SectionContent,
     SectionCta,
-    SectionFaq,
     SectionFeatures,
     SectionHero,
-    SectionPricing,
-    SectionReviews,
-    Social,
+    FooterLinks,
     Layout
 };
 
@@ -32,14 +24,10 @@ export default {
     CtaButtons,
     Footer,
     Header,
-    SectionContact,
     SectionContent,
     SectionCta,
-    SectionFaq,
     SectionFeatures,
     SectionHero,
-    SectionPricing,
-    SectionReviews,
-    Social,
+    FooterLinks,
     Layout
 };

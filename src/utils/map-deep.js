@@ -1,6 +1,5 @@
 const _ = require('lodash');
 
-
 module.exports = function mapDeep(value, iteratee, options = {}, _keyPath = [], _objectStack = []) {
     const postOrder = _.get(options, 'postOrder', false);
     if (!postOrder) {

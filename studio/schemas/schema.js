@@ -8,15 +8,9 @@ import action from './action';
 import landing from './landing';
 import section_content from './section_content';
 import section_cta from './section_cta';
-import section_faq from './section_faq';
-import faq_item from './faq_item';
 import section_features from './section_features';
 import feature_item from './feature_item';
 import section_hero from './section_hero';
-import section_pricing from './section_pricing';
-import pricing_plan from './pricing_plan';
-import section_reviews from './section_reviews';
-import review_item from './review_item';
 import site_config from './site_config';
 import header from './header';
 import footer from './footer';
@@ -34,15 +28,9 @@ export default createSchema({
     action,
     section_content,
     section_cta,
-    section_faq,
-    faq_item,
     section_features,
     feature_item,
     section_hero,
-    section_pricing,
-    pricing_plan,
-    section_reviews,
-    review_item,
     site_config,
     header,
     footer
