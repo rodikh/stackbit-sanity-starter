@@ -1,5 +1,6 @@
 import { useEffect } from 'react';
 import Head from 'next/head';
+import { toFieldPath, toObjectId } from '@stackbit/annotations';
 
 import Header from './Header';
 import Footer from './Footer';
@@ -47,9 +48,9 @@ const Body = (props) => {
                 <meta name="google" content="notranslate" />
                 <link href="https://fonts.googleapis.com/css?family=Nunito+Sans:400,400i,700,700i" rel="stylesheet" />
             </Head>
-            <div id="page" className={`site palette-${props.config.palette}`} data-sb-object-id={page.__metadata.id}>
+            <div id="page" className={`site palette-${props.config.palette}`} {...toObjectId(page.__metadata.id)}>
                 <Header {...props} />
-                <main id="content" className="site-content" data-sb-field-path="sections">
+                <main id="content" className="site-content">
                     {props.children}
                 </main>
                 <Footer {...props} />

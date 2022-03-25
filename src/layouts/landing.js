@@ -12,7 +12,7 @@ const Landing = (props) => {
                 const Component = components[component];
 
                 return (
-                    <Component key={section_idx} {...props} section={section} annotationPrefix={`.${section_idx}`} />
+                    <Component key={section_idx} {...props} section={section} annotationPrefix={`sections.${section_idx}`} />
                 )
             })}
         </Layout>

@@ -1,27 +1,28 @@
+import { toFieldPath } from '@stackbit/annotations';
 import { markdownify } from '../../utils';
 import CtaButtons from '../CtaButtons';
 
 const ContentSection = (props) => {
-    const { section } = props;
+    const { section, annotationPrefix } = props;
     const { section_id, background, image, title, content, actions } = section;
 
     return (
-        <section id={section_id} className={`block text-block bg-${background} outer`}>
+        <section id={section_id} className={`block text-block bg-${background} outer`} {...toFieldPath(annotationPrefix)}>
             <div className="inner">
                 <div className="grid">
                     {image &&
                         <div className="cell block-preview">
-                            <img src={image} alt={title} />
+                            <img src={image} alt={title} {...toFieldPath('.image')}/>
                         </div>
                     }
                     <div className="cell block-content">
                         {title &&
-                            <h2 className="block-title underline">{title}</h2>
+                            <h2 className="block-title underline" {...toFieldPath('.title')}>{title}</h2>
                         }
-                        <div className="block-copy">
+                        <div className="block-copy" {...toFieldPath('.content')}>
                             {markdownify(content)}
                         </div>
-                        <CtaButtons actions={actions} />
+                        <CtaButtons actions={actions} {...toFieldPath('.actions')} />
                     </div>
                 </div>
             </div>
