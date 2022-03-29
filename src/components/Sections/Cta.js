@@ -2,8 +2,7 @@ import { toFieldPath } from '@stackbit/annotations';
 import Action from '../Action';
 
 const CtaSection = (props) => {
-    const { section, annotationPrefix } = props;
-    const { section_id, title, subtitle, actions } = section;
+    const { section: { section_id, title, subtitle, actions }, annotationPrefix } = props;
 
     return (
         <section id={section_id} className="block cta-block bg-accent outer" {...toFieldPath(annotationPrefix)}>

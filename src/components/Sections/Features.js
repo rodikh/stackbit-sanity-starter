@@ -3,8 +3,7 @@ import { markdownify } from '../../utils';
 import CtaButtons from '../CtaButtons';
 
 const FeaturesSection = (props) => {
-    const { section, annotationPrefix } = props;
-    const { section_id, background, title, subtitle, features } = section;
+    const { section: { section_id, background, title, subtitle, features } , annotationPrefix } = props;
 
     return (
         <section id={section_id} className={`block features-block bg-${background} outer`} {...toFieldPath(annotationPrefix)}>

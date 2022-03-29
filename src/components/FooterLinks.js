@@ -1,8 +1,6 @@
 import Action from './Action';
 
-const FooterLinks = (props) => {
-    const { links } = props;
-
+const FooterLinks = ({ links }) => {
     return (
         <ul className="secondary-nav">
             {links.map((action, actionIdx) => (

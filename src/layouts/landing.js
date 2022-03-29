@@ -3,11 +3,11 @@ import _ from 'lodash';
 import components, { Layout } from '../components';
 
 const Landing = (props) => {
-    const { page } = props;
+    const { page: { sections } } = props;
 
     return (
         <Layout {...props}>
-            {page.sections?.map((section, section_idx) => {
+            {sections?.map((section, section_idx) => {
                 const component = _.upperFirst(_.camelCase(section._type));
                 const Component = components[component];
 

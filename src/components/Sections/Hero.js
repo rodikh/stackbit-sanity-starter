@@ -3,8 +3,7 @@ import { markdownify } from '../../utils';
 import Action from '../Action';
 
 const HeroSection = (props) => {
-    const { section, annotationPrefix } = props;
-    const { section_id, title, image, content, actions } = section;
+    const { section: { section_id, title, image, content, actions }, annotationPrefix } = props;
 
     return (
         <section id={section_id} className="block hero-block bg-accent outer" {...toFieldPath(annotationPrefix)}>
@@ -16,13 +15,13 @@ const HeroSection = (props) => {
                         </div>
                     }
                     <div className="cell block-content">
-                        {section.title &&
+                        {title &&
                             <h2 className="block-title underline" {...toFieldPath('.title')}>{title}</h2>
                         }
                         <div className="block-copy" {...toFieldPath('.content')}>
                             {markdownify(content)}
                         </div>
-                        {section.actions &&
+                        {actions &&
                             <p className="block-buttons" {...toFieldPath('.actions')}>
                                 {actions.map((action, actionIdx) => (
                                     <Action key={actionIdx} action={action} className="button white large" {...toFieldPath(`.${actionIdx} .${actionIdx}.label`)} />

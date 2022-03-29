@@ -2,8 +2,8 @@ import { toFieldPath } from '@stackbit/annotations';
 import { Layout } from '../components';
 import { markdownify } from '../utils';
 
-const Page = ({ page }) => {
-    const { title, image, subtitle, content } = page;
+const Page = (props) => {
+    const { page: { title, image, subtitle, content } } = props;
 
     return (
         <Layout {...props}>

@@ -3,8 +3,7 @@ import { markdownify } from '../../utils';
 import CtaButtons from '../CtaButtons';
 
 const ContentSection = (props) => {
-    const { section, annotationPrefix } = props;
-    const { section_id, background, image, title, content, actions } = section;
+    const { section: { section_id, background, image, title, content, actions }, annotationPrefix } = props;
 
     return (
         <section id={section_id} className={`block text-block bg-${background} outer`} {...toFieldPath(annotationPrefix)}>
@@ -12,7 +11,7 @@ const ContentSection = (props) => {
                 <div className="grid">
                     {image &&
                         <div className="cell block-preview">
-                            <img src={image} alt={title} {...toFieldPath('.image')}/>
+                            <img src={image} alt={title} {...toFieldPath('.image')} />
                         </div>
                     }
                     <div className="cell block-content">

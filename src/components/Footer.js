@@ -5,8 +5,7 @@ import FooterLinks from './FooterLinks';
 import Action from './Action';
 
 const Footer = (props) => {
-    const { config } = props;
-    const { header, footer } = config;
+    const { config: { header, footer } } = props;
 
     return (
         <footer id="colophon" className="site-footer">

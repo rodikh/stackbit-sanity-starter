@@ -38,8 +38,7 @@ const Header = (props) => {
         }
     }, []);
 
-    const { config, page } = props;
-    const { header } = config;
+    const { config: { header }, page } = props;
 
     return (
         <header id="masthead" className="site-header outer">
