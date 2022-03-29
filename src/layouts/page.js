@@ -2,15 +2,14 @@ import { toFieldPath } from '@stackbit/annotations';
 import { Layout } from '../components';
 import { markdownify } from '../utils';
 
-const Page = (props) => {
-    const { page } = props;
+const Page = ({ page }) => {
     const { title, image, subtitle, content } = page;
 
     return (
         <Layout {...props}>
             <div className="outer">
                 <div className="inner-medium">
-                    <article className="post post-full">
+                    <article className="post">
                         <header className="post-header">
                             <h1 className="post-title" {...toFieldPath('title')}>{title}</h1>
                         </header>

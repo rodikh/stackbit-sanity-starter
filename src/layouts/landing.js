@@ -2,9 +2,7 @@ import _ from 'lodash';
 
 import components, { Layout } from '../components';
 
-const Landing = (props) => {
-    const { page } = props;
-
+const Landing = ({ page }) => {
     return (
         <Layout {...props}>
             {page.sections?.map((section, section_idx) => {
