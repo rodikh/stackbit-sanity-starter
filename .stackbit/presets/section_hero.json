@@ -7,13 +7,7 @@
             "data": {
                 "title": "Next.js + Sourcebit = 🙌🏻",
                 "content": "Next.js new static site generation features combined with Sourcebit's data synchronization features makes a powerful combination.",
-                "image": {
-                    "_type": "image",
-                    "asset": {
-                        "_type": "reference",
-                        "_ref": "image-d143780d371fb07356d7f0644c49ba2ffb0d7de7-700x350-png"
-                    }
-                },
+                "image":"image-d143780d371fb07356d7f0644c49ba2ffb0d7de7-700x350-png",
                 "actions": [
                     {
                         "_key": "hero-action-1",
